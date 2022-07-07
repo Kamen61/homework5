@@ -3,21 +3,22 @@
 // [345, 897, 568, 234] -> 2
 
 int[] arrayValues=new int[15];
+int evenNumbers=0;
 for (int i=0;i<arrayValues.Length;i++){
 
     arrayValues[i]=new Random().Next(100,1000);
-}
-System.Console.WriteLine($"[{string.Join(";",arrayValues)}]");
-int evenNumbers=0;
-for (int j=0;j<arrayValues.Length;j++){
-    if (arrayValues[j]%2==0)
+    if (arrayValues[i]%2==0)
         evenNumbers++;
 }
+System.Console.WriteLine($"[{string.Join(";",arrayValues)}]");
+
 System.Console.WriteLine("Кол-во четных чисел в массиве = {0}",evenNumbers);
 
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
+
+
 
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
